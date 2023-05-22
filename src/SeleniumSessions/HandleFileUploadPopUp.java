@@ -8,6 +8,7 @@ public class HandleFileUploadPopUp {
     public static void main(String[] args){
         WebDriver driver = new ChromeDriver(); // launch chrome
         driver.get("http://html.com/input-type-file/"); // enter url
+        //type="file" should be present for Browse/Attach/uploadFile buttons
         driver.findElement(By.xpath("")).sendKeys("path of file to be uploaded");
         //type attribute should be file in html file where we inspect elements
 
